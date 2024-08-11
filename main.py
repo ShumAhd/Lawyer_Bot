@@ -7,7 +7,7 @@ import re
 logging.basicConfig(level=logging.DEBUG)
 
 # Создаем экземпляр бота
-bot = TeleBot('Ваш токен бота', threaded=False)
+bot = TeleBot('7390214642:AAGVdkMdd4MPpzIrAaJн-x6fS8Utm7LZB4o', threaded=False)
 
 # Словарь для хранения данных пользователей
 user_dict = {}
@@ -88,7 +88,7 @@ def process_phone_step(message):
     if re.match(r"^\+\d{11}$", message.text):
         user.phone = message.text
         bot.send_message(chat_id, 'Спасибо! Ваш вопрос отправлен. С вами свяжутся юристы РО.')
-        bot.send_message(ID чата в кторый будет осуществлятся отправка собранной информации,
+        bot.send_message(-4273513647,
                          f'Новый вопрос от {message.from_user.first_name} @{message.from_user.username}\n\nВопрос: {user.question}\nКонтактный номер: {user.phone}')
 
         # Предлагаем задать новый вопрос
