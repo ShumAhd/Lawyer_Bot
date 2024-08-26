@@ -6,6 +6,7 @@ class User:
         self.phone = None
         self.question = None
 
+
 class UserManager:
     def __init__(self):
         self.user_dict = {}

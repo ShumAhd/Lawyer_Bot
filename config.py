@@ -1,7 +1,7 @@
-# config.py
+import os
+from dotenv import load_dotenv
 
-# Токен бота
-TOKEN = 'ваш_токен'
 
-# ID чата для отправки вопросов юристам
-LAWYER_CHAT_ID = -4273513647
+load_dotenv()
+TOKEN = os.getenv('TOKEN')
+LAWYER_CHAT_ID = os.getenv('LAWYER_CHAT_ID')
